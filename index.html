@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-content d-flex">
+      <aside class="bg-white border-end shadow-sm">
+        <div class="brand d-flex justify-content-center py-15 border-bottom">
+          <a href="./"><h1>3li7u</h1></a>
+        </div>
+        <div class="menu py-20">
+          <ul>
+            <li>
+              <a
+                href="./"
+                class="active d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gauge fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-10"
+              >
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  width="24"
+                  class="rounded"
+                />
+                <span class="fs-14 fw-600">Ali Alhussein</span>
+              </a>
+            </li>
+            <h5 class="border-top pt-10 mb-10">Menu</h5>
+            <li>
+              <a
+                href="./projects.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-list-check fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./courses.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./files.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-file-archive fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./settings.html"
+                class="d-flex justify-content-center gap-10 rounded-08 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main dashboard-page w-100 overflow-hidden">
+        <header
+          class="d-flex align-items-center justify-content-between px-10 bg-white border-bottom shadow-sm"
+        >
+          <div class="w-50 px-05">
+            <div
+              class="d-flex align-items-center bg-light bg-gray-hover transition-3 rounded-pill ps-10"
+            >
+              <i class="fa-solid fa-search fs-14 text-gray"></i>
+              <input
+                class="w-100 px-10 border-0 bg-none"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="w-50 px-05">
+            <div class="d-flex align-items-center justify-content-end gap-10">
+              <i
+                class="fa-solid fa-bell bg-gray p-10 rounded notification-bell has-notf pos-relative d-flex align-items-center justify-content-center"
+              ></i>
+              <div class="header-menu-icon pos-relative" role="button">
+                <i
+                  class="fa-solid fa-chevron-down pos-absolute bottom-05 p-01 border border-white rounded bg-gray right-0 fs-10"
+                ></i>
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  height="40px"
+                  class="rounded"
+                />
+                <div
+                  class="header-menu bg-white rounded-08 p-10 pos-absolute right-0 top-hide mt-05 shadow-md opacity-0 transition-2"
+                >
+                  <a
+                    href="./profile.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-15"
+                  >
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      class="rounded"
+                    />
+                    <span class="fs-14 fw-600">Profile</span>
+                  </a>
+                  <a
+                    href="./settings.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Settings</span>
+                  </a>
+                  <a
+                    class="d-flex gap-10 rounded-08 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-sign-out fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Log Out</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="px-15">
+          <section class="py-20">
+            <h1>Dashboard</h1>
+          </section>
+          <section class="d-grid content gap-20">
+            <div class="profile bg-white rounded-08 shadow overflow-hidden">
+              <div class="cover overflow-hidden">
+                <img src="./images/cover.png" alt="cover" class="fit-image" />
+              </div>
+              <div class="profile-image pos-relative">
+                <img
+                  src="/images/avatar.jpg"
+                  alt="profile"
+                  height="60"
+                  class="rounded pos-absolute"
+                />
+              </div>
+              <div
+                class="profile-info d-flex justify-content-between align-items-center py-20 mt-10 px-15"
+              >
+                <div>
+                  <h3>Ali Alhussein</h3>
+                  <p class="fs-14">Front End Web Developer</p>
+                </div>
+                <a href="./profile.html"
+                  ><button
+                    class="bg-gray bg-blue-hover transition-3 rounded-pill px-15 fw-600"
+                  >
+                    Profile
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="draft bg-white rounded-08 shadow px-15 py-20">
+              <h3>Quick Draft</h3>
+              <p>Don't miss what's on your mind</p>
+              <form class="mt-20">
+                <textarea
+                  class="bg-light rounded-08 px-15 py-20"
+                  placeholder="Type something.."
+                ></textarea>
+                <input
+                  class="bg-gray bg-blue-hover transition-3 fw-600 rounded-pill w-content px-15 float-right mt-10"
+                  type="submit"
+                  value="Save"
+                />
+              </form>
+            </div>
+            <div class="goals bg-white rounded-08 shadow px-15 py-20">
+              <h3>Yearly Goals</h3>
+              <p>Your Goals and the progress you've achieved.</p>
+              <div>
+                <div class="mt-15 py-05 goal d-flex gap-20">
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-blue-alt px-15 rounded-08"
+                  >
+                    <i class="fa-solid fa-dollar fa-fw text-blue"></i>
+                  </div>
+                  <div class="w-100">
+                    <p class="fs-14">Your Income</p>
+                    <h4>$16,000</h4>
+                    <div class="progress bg-blue-alt rounded-pill">
+                      <div
+                        class="progress-bar bg-blue rounded-pill pos-relative"
+                        style="width: 75%; height: 6px"
+                      >
+                        <div
+                          class="progress-badge bg-blue rounded-05 px-05 pos-absolute text-white"
+                        >
+                          75%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 py-05 goal d-flex gap-20">
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-lime-alt px-15 rounded-08"
+                  >
+                    <i class="fa-solid fa-bars-progress fa-fw text-lime"></i>
+                  </div>
+                  <div class="w-100">
+                    <p class="fs-14">Your Projects</p>
+                    <h4>+50</h4>
+                    <div class="progress bg-lime-alt rounded-pill">
+                      <div
+                        class="progress-bar bg-lime rounded-pill pos-relative"
+                        style="width: 35%"
+                      >
+                        <div
+                          class="progress-badge bg-lime rounded-05 px-05 pos-absolute text-white"
+                        >
+                          35%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 py-05 goal d-flex gap-20">
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-cherry-alt px-15 rounded-08"
+                  >
+                    <i class="fa-solid fa-rss fa-fw text-cherry"></i>
+                  </div>
+                  <div class="w-100">
+                    <p class="fs-14">Your Followers</p>
+                    <h4>500K</h4>
+                    <div class="progress bg-cherry-alt rounded-pill">
+                      <div
+                        class="progress-bar bg-cherry rounded-pill pos-relative"
+                        style="width: 55%"
+                      >
+                        <div
+                          class="progress-badge bg-cherry rounded-05 px-05 pos-absolute text-white"
+                        >
+                          55%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-15 py-05 goal d-flex gap-20">
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-lemon-alt px-15 rounded-08"
+                  >
+                    <i class="fa-solid fa-star fa-fw text-lemon"></i>
+                  </div>
+                  <div class="w-100">
+                    <p class="fs-14">Your Rating</p>
+                    <h4>1000</h4>
+                    <div class="progress bg-lemon-alt rounded-pill">
+                      <div
+                        class="progress-bar bg-lemon rounded-pill pos-relative"
+                        style="width: 45%"
+                      >
+                        <div
+                          class="progress-badge bg-lemon rounded-05 px-05 pos-absolute text-white"
+                        >
+                          45%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tickets bg-white rounded-08 shadow px-15 py-20">
+              <h3>Tickets Statistics</h3>
+              <p>Some Stat about you suport tickets</p>
+              <div
+                class="mt-20 d-flex flex-wrap justify-content-between gap-20"
+              >
+                <div class="stat border rounded-08 py-20 text-center">
+                  <i class="fa-solid fa-ticket fa-fw fa-2x text-blue mb-10"></i>
+                  <h4>+3500</h4>
+                  <p class="fs-14">Total</p>
+                </div>
+                <div class="stat border rounded-08 py-20 text-center">
+                  <i class="fa-solid fa-clock fa-fw fa-2x text-lemon mb-10"></i>
+                  <h4>25</h4>
+                  <p class="fs-14">Pending</p>
+                </div>
+                <div class="stat border rounded-08 py-20 text-center">
+                  <i
+                    class="fa-solid fa-check-circle fa-fw fa-2x text-lime mb-10"
+                  ></i>
+                  <h4>2436</h4>
+                  <p class="fs-14">Closed</p>
+                </div>
+                <div class="stat border rounded-08 py-20 text-center">
+                  <i
+                    class="fa-solid fa-trash fa-fw fa-2x text-cherry mb-10"
+                  ></i>
+                  <h4>107</h4>
+                  <p class="fs-14">Deleted</p>
+                </div>
+              </div>
+            </div>
+            <div class="news bg-white rounded-08 shadow px-15 py-20">
+              <h3>Latest News</h3>
+              <div class="mt-20">
+                <div class="mt-10 new d-flex gap-10 border-bottom pb-10">
+                  <div class="image">
+                    <img
+                      src="./images/news/news-01.jpg"
+                      alt="featured"
+                      class="fit-image rounded-08"
+                    />
+                  </div>
+                  <div>
+                    <h4>This Some News Title</h4>
+                    <div
+                      class="text-gray fs-10 d-flex gap-05 align-items-center"
+                    >
+                      <i class="fa-solid fa-clock"></i>
+                      <span>Today</span>
+                    </div>
+                    <p class="fs-12">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-10 new d-flex gap-10 border-bottom pb-10">
+                  <div class="image">
+                    <img
+                      src="./images/news/news-04.jpg"
+                      alt="featured"
+                      class="fit-image rounded-08"
+                    />
+                  </div>
+                  <div>
+                    <h4>This Some News Title</h4>
+                    <div
+                      class="text-gray fs-10 d-flex gap-05 align-items-center"
+                    >
+                      <i class="fa-solid fa-clock"></i>
+                      <span>Today</span>
+                    </div>
+                    <p class="fs-12">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-10 new d-flex gap-10">
+                  <div class="image">
+                    <img
+                      src="./images/news/news-03.jpg"
+                      alt="featured"
+                      class="fit-image rounded-08"
+                    />
+                  </div>
+                  <div>
+                    <h4>This Some News Title</h4>
+                    <div
+                      class="text-gray fs-10 d-flex gap-05 align-items-center"
+                    >
+                      <i class="fa-solid fa-clock"></i>
+                      <span>Today</span>
+                    </div>
+                    <p class="fs-12">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tasks bg-white rounded-08 shadow px-15 py-20">
+              <h3>Your Tasks</h3>
+              <div>
+                <div
+                  class="task mt-10 d-flex justify-content-between align-items-center p-10 border-bottom"
+                >
+                  <div>
+                    <h4>Task Title gose here</h4>
+                    <p class="fs-14">
+                      Lorem ipsum dolor sit amet adipisic elit. At!
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-square text-blue fs-20"></i>
+                  </div>
+                </div>
+                <div
+                  class="task mt-10 d-flex justify-content-between align-items-center p-10 border-bottom"
+                >
+                  <div>
+                    <h4>Task Title gose here</h4>
+                    <p class="fs-14">
+                      Lorem ipsum dolor sit amet adipisic elit. At!
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-square text-blue fs-20"></i>
+                  </div>
+                </div>
+                <div
+                  class="task mt-10 d-flex justify-content-between align-items-center p-10 border-bottom"
+                >
+                  <div>
+                    <h4>Task Title gose here</h4>
+                    <p class="fs-14">
+                      Lorem ipsum dolor sit amet adipisic elit. At!
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-square text-blue fs-20"></i>
+                  </div>
+                </div>
+                <div
+                  class="task mt-10 d-flex justify-content-between align-items-center p-10"
+                >
+                  <div class="text-stricked opacity-05">
+                    <h4>Task Title gose here</h4>
+                    <p class="fs-14">
+                      Lorem ipsum dolor sit amet adipisic elit. At!
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check-square text-blue fs-20"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search bg-white rounded-08 shadow px-15 py-20">
+              <h3>Top Search Terms</h3>
+              <div class="mt-10 d-flex justify-content-between">
+                <p class="fs-14">Keyword</p>
+                <p class="fs-14">Count</p>
+              </div>
+              <div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Programming</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >315</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Algorithms</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >309</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>UX Design</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >223</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Problem Solving</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >212</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Devops</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >197</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Cloud based app</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >176</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Front-End Dev</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >104</span
+                  >
+                </div>
+                <div
+                  class="mt-20 keyword d-flex align-items-center justify-content-between"
+                >
+                  <h4>Back-End Dev</h4>
+                  <span class="bg-gray d-block rounded-05 fs-12 py-01 px-05"
+                    >94</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="files bg-white rounded-08 shadow px-15 py-20">
+              <h3>Last Uploaded Files</h3>
+              <div>
+                <div
+                  class="file mt-10 py-10 d-flex align-items-center justify-content-between border-bottom"
+                >
+                  <div class="d-flex gap-20 align-items-center">
+                    <div>
+                      <i class="fa-solid fa-file-pdf text-cherry fa-2x"></i>
+                    </div>
+                    <div>
+                      <h4>file-name.pdf</h4>
+                      <p class="fs-14">owner name</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="d-block bg-gray rounded-08 py-01 px-05 fs-12"
+                      >1.95 MB</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="file mt-10 py-10 d-flex align-items-center justify-content-between border-bottom"
+                >
+                  <div class="d-flex gap-20 align-items-center">
+                    <div>
+                      <i class="fa-solid fa-file-word text-blue fa-2x"></i>
+                    </div>
+                    <div>
+                      <h4>file-name.docx</h4>
+                      <p class="fs-14">owner name</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="d-block bg-gray rounded-08 py-01 px-05 fs-12"
+                      >234.30 KB</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="file mt-10 py-10 d-flex align-items-center justify-content-between border-bottom"
+                >
+                  <div class="d-flex gap-20 align-items-center">
+                    <div>
+                      <i
+                        class="fa-solid fa-file-powerpoint text-tomato fa-2x"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4>file-name.pptx</h4>
+                      <p class="fs-14">owner name</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="d-block bg-gray rounded-08 py-01 px-05 fs-12"
+                      >2.27 MB</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="file mt-10 py-10 d-flex align-items-center justify-content-between border-bottom"
+                >
+                  <div class="d-flex gap-20 align-items-center">
+                    <div>
+                      <i class="fa-solid fa-file-pdf text-cherry fa-2x"></i>
+                    </div>
+                    <div>
+                      <h4>file-name.pdf</h4>
+                      <p class="fs-14">owner name</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="d-block bg-gray rounded-08 py-01 px-05 fs-12"
+                      >0.98 MB</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="file mt-10 pt-10 d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex gap-20 align-items-center">
+                    <div>
+                      <i class="fa-solid fa-file-zipper text-lemon fa-2x"></i>
+                    </div>
+                    <div>
+                      <h4>file-name.rar</h4>
+                      <p class="fs-14">owner name</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="d-block bg-gray rounded-08 py-01 px-05 fs-12"
+                      >2.55 GB</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline bg-white rounded-08 shadow px-15 py-20">
+              <h3>Current Project Progress</h3>
+              <p>Project Name</p>
+              <div class="steps mt-10 ps-10 pos-relative">
+                <div
+                  class="step mt-15 done ps-25 pos-relative d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h4>Stage Tile</h4>
+                    <p class="fs-14">Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="d-flex flex-column gap-05">
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-days text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jun 10 2022</span
+                      >
+                    </div>
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-check text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jun 15 2022</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="step mt-15 done ps-25 pos-relative d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h4>Another Stage Tile</h4>
+                    <p class="fs-14">Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="d-flex flex-column gap-05">
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-days text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jun 16 2022</span
+                      >
+                    </div>
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-check text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jun 27 2022</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="step mt-15 current ps-25 pos-relative d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h4>Stage Tile</h4>
+                    <p class="fs-14">Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="d-flex flex-column gap-05">
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-days text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jun 28 2022</span
+                      >
+                    </div>
+                    <div class="d-flex gap-10 align-items-center opacity-03">
+                      <i class="fa-solid fa-calendar-check text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jul 15 2022</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="step mt-15 ps-25 pos-relative d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h4>Stage Tile</h4>
+                    <p class="fs-14">Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="d-flex flex-column gap-05 opacity-03">
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-days text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jul 15 2022</span
+                      >
+                    </div>
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-check text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jul 17 2022</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="step mt-15 ps-25 pos-relative d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h4>End Stage</h4>
+                    <p class="fs-14">Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="d-flex flex-column gap-05 opacity-03">
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-days text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jul 17 2022</span
+                      >
+                    </div>
+                    <div class="d-flex gap-10 align-items-center">
+                      <i class="fa-solid fa-calendar-check text-blue"></i>
+                      <span class="fs-12 bg-gray rounded-05 px-05 py-01"
+                        >Jul 20 2022</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reminders bg-white rounded-08 shadow px-15 py-20">
+              <h3>Reminders</h3>
+              <div class="mt-20">
+                <div
+                  class="reminder border-start border-5 border-blue mt-10 p-10 pe-0 d-flex flex-wrap gap-10 align-items-center justify-content-between"
+                >
+                  <h4>Something to remind</h4>
+                  <div class="d-flex gap-10 align-items-center">
+                    <i class="fa-solid fa-calendar-alt text-blue fs-18"></i>
+                    <span class="fs-12 bg-blue-alt py-01 px-05 rounded-05"
+                      >Jan 22 2022 | 12:30 PM</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="reminder border-start border-5 border-lime mt-10 p-10 pe-0 d-flex flex-wrap gap-10 align-items-center justify-content-between"
+                >
+                  <h4>Something to remind</h4>
+                  <div class="d-flex gap-10 align-items-center">
+                    <i class="fa-solid fa-calendar-alt text-lime fs-18"></i>
+                    <span class="fs-12 bg-lime-alt py-01 px-05 rounded-05"
+                      >Jan 21 2022 | 10:00 AM</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="reminder border-start border-5 border-tomato mt-10 p-10 pe-0 d-flex flex-wrap gap-10 align-items-center justify-content-between"
+                >
+                  <h4>Something to remind</h4>
+                  <div class="d-flex gap-10 align-items-center">
+                    <i class="fa-solid fa-calendar-alt text-tomato fs-18"></i>
+                    <span class="fs-12 bg-tomato-alt py-01 px-05 rounded-05"
+                      >Jan 21 2022 | 11:00 AM</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="reminder border-start border-5 border-lemon mt-10 p-10 pe-0 d-flex flex-wrap gap-10 align-items-center justify-content-between"
+                >
+                  <h4>Something to remind</h4>
+                  <div class="d-flex gap-10 align-items-center">
+                    <i class="fa-solid fa-calendar-alt text-lemon fs-18"></i>
+                    <span class="fs-12 bg-lemon-alt py-01 px-05 rounded-05"
+                      >Jan 23 2022 | 07:15 PM</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="reminder border-start border-5 border-gray mt-10 p-10 pe-0 d-flex flex-wrap gap-10 align-items-center justify-content-between"
+                >
+                  <h4>Something to remind</h4>
+                  <div class="d-flex gap-10 align-items-center">
+                    <i class="fa-solid fa-calendar-alt text-gray fs-18"></i>
+                    <span class="fs-12 bg-light py-01 px-05 rounded-05"
+                      >Jan 22 2022 | 12:30 PM</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="reminder border-start border-5 border-cherry mt-10 p-10 pe-0 d-flex flex-wrap gap-10 align-items-center justify-content-between"
+                >
+                  <h4>Something else to remind</h4>
+                  <div class="d-flex gap-10 align-items-center">
+                    <i class="fa-solid fa-calendar-alt text-cherry fs-18"></i>
+                    <span class="fs-12 bg-cherry-alt py-01 px-05 rounded-05"
+                      >Jan 25 2022 | 11:45 AM</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post bg-white rounded-08 shadow px-15 py-20">
+              <h3>Latest Post</h3>
+              <div class="mt-20">
+                <div class="d-flex gap-10 justify-content-between">
+                  <div class="d-flex gap-10 align-items-center">
+                    <div class="image">
+                      <img
+                        src="./images/profile.jpg"
+                        alt="profile"
+                        width="40"
+                        class="rounded"
+                      />
+                    </div>
+                    <div>
+                      <h4>Ali Alhussein</h4>
+                      <div
+                        class="fs-12 d-flex align-items-center gap-05 text-gray"
+                      >
+                        <i class="fa-solid fa-clock"></i>
+                        <span>3 hours ago</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    role="button"
+                    class="bg-light-hover w-h-40 transition-3 rounded d-flex align-items-center justify-content-center text-gray"
+                  >
+                    <i class="fa-solid fa-ellipsis fs-20"></i>
+                  </div>
+                </div>
+                <div class="py-10">
+                  <p class="fs-14">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum delectus harum nulla porro deserunt laboriosam
+                    architecto, voluptatem voluptatibus, dolor laudantium
+                    repudiandae natus consequatur fuga? Provident earum
+                    reiciendis facere expedita necessitatibus optio, soluta,
+                    culpa excepturi totam modi, autem odit suscipit ea dolorem
+                    perspiciatis delectus. Nulla facilis itaque asperiores
+                    aperiam labore? Odit.
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between border-top pt-15">
+                  <div
+                    class="transition-3 bg-light-hover rounded-05 px-10 py-05 cursor-pointer"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="fs-14">1.2K</span>
+                  </div>
+                  <div
+                    class="transition-3 bg-light-hover rounded-05 px-10 py-05"
+                    role="button"
+                  >
+                    <i class="fa-regular fa-comments"></i>
+                    <span class="fs-14">332</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="socials bg-white rounded-08 shadow px-15 py-20">
+              <h3>Social Media Statistics</h3>
+              <div class="mt-20">
+                <div
+                  class="social mt-15 p-05 rounded-08 d-flex align-items-center justify-content-between bg-blue-alt"
+                >
+                  <div class="d-flex align-items-center gap-10">
+                    <div
+                      class="d-flex align-items-center justify-content-between bg-blue rounded-08 p-10"
+                    >
+                      <i
+                        class="fa-brands fa-facebook-f text-white fa-fw fs-20"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="fs-14">200K Like</p>
+                    </div>
+                  </div>
+                  <button class="bg-blue px-20 rounded-05 text-white me-05">
+                    <span>Like</span>
+                  </button>
+                </div>
+                <div
+                  class="social mt-15 p-05 rounded-08 d-flex align-items-center justify-content-between"
+                  style="background-color: rgba(0, 114, 177, 0.1)"
+                >
+                  <div class="d-flex align-items-center gap-10">
+                    <div
+                      class="d-flex align-items-center justify-content-between rounded-08 p-10"
+                      style="background-color: rgb(0, 114, 177)"
+                    >
+                      <i
+                        class="fa-brands fa-linkedin-in text-white fa-fw fs-20"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="fs-14">10K Connections</p>
+                    </div>
+                  </div>
+                  <button
+                    class="px-20 rounded-05 text-white me-05"
+                    style="background-color: rgb(0, 114, 177)"
+                  >
+                    <span>Connect</span>
+                  </button>
+                </div>
+                <div
+                  class="social mt-15 p-05 rounded-08 d-flex align-items-center justify-content-between"
+                  style="background-color: rgba(255, 0, 0, 0.1)"
+                >
+                  <div class="d-flex align-items-center gap-10">
+                    <div
+                      class="d-flex align-items-center justify-content-between rounded-08 p-10"
+                      style="background-color: red"
+                    >
+                      <i
+                        class="fa-brands fa-youtube text-white fa-fw fs-20"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="fs-14">1M Subsicribers</p>
+                    </div>
+                  </div>
+                  <button
+                    class="px-20 rounded-05 text-white me-05"
+                    style="background-color: red"
+                  >
+                    <span>Subsucribe</span>
+                  </button>
+                </div>
+                <div
+                  class="social mt-15 p-05 rounded-08 d-flex align-items-center justify-content-between"
+                  style="background-color: rgba(0, 172, 238, 0.1)"
+                >
+                  <div class="d-flex align-items-center gap-10">
+                    <div
+                      class="d-flex align-items-center justify-content-between rounded-08 p-10"
+                      style="background-color: rgb(0, 172, 238)"
+                    >
+                      <i
+                        class="fa-brands fa-twitter text-white fa-fw fs-20"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="fs-14">90K Followers</p>
+                    </div>
+                  </div>
+                  <button
+                    class="px-20 rounded-05 text-white me-05"
+                    style="background-color: rgb(0, 172, 238)"
+                  >
+                    <span>Follow</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-20">
+            <div class="table bg-white rounded-08 shadow px-15 py-20">
+              <h3>Projects</h3>
+              <table class="mt-20">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>PM</th>
+                    <th>Client</th>
+                    <th>Team Members</th>
+                    <th>Total Cost</th>
+                    <th>Start Date</th>
+                    <th>Status</th>
+                    <th>End Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>XYZ Web Application</td>
+                    <td>John Doe</td>
+                    <td>Wisteria Tone</td>
+                    <td>
+                      <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-02.png" alt="avatar" />
+                      <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-04.png" alt="avatar" />
+                      <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                    </td>
+                    <td>$2,500</td>
+                    <td>10 Feb 2021</td>
+                    <td>
+                      <span class="bg-blue text-white px-10 fs-12 rounded-08"
+                        >Completed</span
+                      >
+                    </td>
+                    <td>21 Mar 2021</td>
+                  </tr>
+                  <tr>
+                    <td>ABC Website</td>
+                    <td>Fletch Skinner</td>
+                    <td>Piff Jenkins</td>
+                    <td>
+                      <img src="./images/Team/avatar-02.png" alt="avatar" />
+                      <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-04.png" alt="avatar" />
+                      <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                    </td>
+                    <td>$750</td>
+                    <td>4 Jan 2020</td>
+                    <td>
+                      <span class="bg-blue text-white px-10 fs-12 rounded-08"
+                        >Completed</span
+                      >
+                    </td>
+                    <td>12 Feb 2020</td>
+                  </tr>
+                  <tr>
+                    <td>XYZ Mobile App</td>
+                    <td>Brian Cumin</td>
+                    <td>Max Conversion</td>
+                    <td>
+                      <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-02.png" alt="avatar" />
+                    </td>
+                    <td>$1,500</td>
+                    <td>20 Jun 2022</td>
+                    <td>
+                      <span class="bg-lemon text-white px-10 fs-12 rounded-08"
+                        >Pending</span
+                      >
+                    </td>
+                    <td>21 Aug 2022</td>
+                  </tr>
+                  <tr>
+                    <td>ABC Desktop App</td>
+                    <td>Russell Sprout</td>
+                    <td>Barry Tone</td>
+                    <td>
+                      <img src="./images/Team/avatar-02.png" alt="avatar" />
+                      <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-04.png" alt="avatar" />
+                    </td>
+                    <td>$3,400</td>
+                    <td>23 Apr 2021</td>
+                    <td>
+                      <span class="bg-blue text-white px-10 fs-12 rounded-08"
+                        >Completed</span
+                      >
+                    </td>
+                    <td>2 Jul 2021</td>
+                  </tr>
+                  <tr>
+                    <td>ABC Web Application</td>
+                    <td>Fletch Skinner</td>
+                    <td>Parsley Montana</td>
+                    <td>
+                      <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-02.png" alt="avatar" />
+                      <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-04.png" alt="avatar" />
+                      <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    </td>
+                    <td>$5,100</td>
+                    <td>10 Oct 2022</td>
+                    <td>
+                      <span class="bg-lime text-white px-10 fs-12 rounded-08"
+                        >In Progress</span
+                      >
+                    </td>
+                    <td>21 Dec 2022</td>
+                  </tr>
+                  <tr>
+                    <td>XYZ Website</td>
+                    <td>Chauffina Carr</td>
+                    <td>Ruüd van Driver</td>
+                    <td>
+                      <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-02.png" alt="avatar" />
+                      <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                      <img src="./images/Team/avatar-04.png" alt="avatar" />
+                    </td>
+                    <td>$1,000</td>
+                    <td>1 Feb 2020</td>
+                    <td>
+                      <span class="bg-blue text-white px-10 fs-12 rounded-08"
+                        >Completed</span
+                      >
+                    </td>
+                    <td>1 Apr 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

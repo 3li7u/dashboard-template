@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-content d-flex">
+      <aside class="bg-white border-end shadow-sm">
+        <div class="brand d-flex justify-content-center py-15 border-bottom">
+          <a href="./"><h1>3li7u</h1></a>
+        </div>
+        <div class="menu py-20">
+          <ul>
+            <li>
+              <a
+                href="./"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gauge fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="active d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-10"
+              >
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  width="24"
+                  class="rounded"
+                />
+                <span class="fs-14 fw-600">Ali Alhussein</span>
+              </a>
+            </li>
+            <h5 class="border-top pt-10 mb-10">Menu</h5>
+            <li>
+              <a
+                href="./projects.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-list-check fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./courses.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./files.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-file-archive fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./settings.html"
+                class="d-flex justify-content-center gap-10 rounded-08 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main profile-page w-100 overflow-hidden">
+        <header
+          class="d-flex align-items-center justify-content-between px-10 bg-white border-bottom shadow-sm"
+        >
+          <div class="w-50 px-05">
+            <div
+              class="d-flex align-items-center bg-light bg-gray-hover transition-3 rounded-pill ps-10"
+            >
+              <i class="fa-solid fa-search fs-14 text-gray"></i>
+              <input
+                class="w-100 px-10 border-0 bg-none"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="w-50 px-05">
+            <div class="d-flex align-items-center justify-content-end gap-10">
+              <i
+                class="fa-solid fa-bell bg-gray p-10 rounded notification-bell has-notf pos-relative d-flex align-items-center justify-content-center"
+              ></i>
+              <div class="header-menu-icon pos-relative" role="button">
+                <i
+                  class="fa-solid fa-chevron-down pos-absolute bottom-05 p-01 border border-white rounded bg-gray right-0 fs-10"
+                ></i>
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  height="40px"
+                  class="rounded"
+                />
+                <div
+                  class="header-menu bg-white rounded-08 p-10 pos-absolute right-0 top-hide mt-05 shadow-md opacity-0 transition-2"
+                >
+                  <a
+                    href="./profile.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-15"
+                  >
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      class="rounded"
+                    />
+                    <span class="fs-14 fw-600">Profile</span>
+                  </a>
+                  <a
+                    href="./settings.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Settings</span>
+                  </a>
+                  <a
+                    class="d-flex gap-10 rounded-08 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-sign-out fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Log Out</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="mx-15">
+          <section
+            class="profile bg-white rounded-bottom-10 shadow overflow-hidden"
+          >
+            <div class="cover rounded-bottom-10 overflow-hidden pos-relative">
+              <img src="./images/cover.png" alt="cover" class="fit-image" />
+              <span
+                role="button"
+                class="pos-absolute d-flex align-items-center gap-10 bg-white py-05 px-10 rounded-05"
+              >
+                <i class="fa-solid fa-camera"></i>
+                <p class="fs-14 fw-500">Edit Cover Photo</p>
+              </span>
+            </div>
+            <div
+              class="data d-flex flex-wrap align-items-center justify-content-center gap-20 pb-20"
+            >
+              <div
+                class="info d-flex flex-wrap align-items-center justify-content-center"
+              >
+                <div class="image p-05 bg-white rounded pos-relative">
+                  <img
+                    src="./images/profile-image.jpg"
+                    alt="profile"
+                    class="rounded"
+                    width="168"
+                  />
+                  <span
+                    role="button"
+                    class="bg-gray rounded w-h-35 pos-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-camera"></i>
+                  </span>
+                </div>
+                <div class="meta text-center">
+                  <h1>Ali Alhussein</h1>
+                  <p class="fs-14">Front End Web Developer</p>
+                  <div class="mt-05 d-flex gap-10 align-items-center">
+                    <p class="fs-12">Rating 330</p>
+                    <span>
+                      <i class="fa-solid fa-star text-lemon"></i>
+                      <i class="fa-solid fa-star text-lemon"></i>
+                      <i class="fa-solid fa-star text-lemon"></i>
+                      <i class="fa-solid fa-star-half-stroke text-lemon"></i>
+                      <i class="fa-regular fa-star text-lemon"></i>
+                    </span>
+                  </div>
+                  <div class="mt-05 d-flex gap-10 align-items-center">
+                    <p class="fs-12" style="min-width: fit-content">Level 13</p>
+                    <div
+                      class="w-100 bg-blue-alt rounded-pill overflow-hidden"
+                      style="height: 5px"
+                    >
+                      <div class="bg-blue h-100" style="width: 81%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="bg-gray bg-blue-hover transition-3 px-15 rounded-05"
+                >
+                  <i class="fa-solid fa-pen me-05"></i>
+                  <span class="fw-600">Edit Profile</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="py-20">
+            <div class="d-flex flex-wrap gap-20">
+              <div class="profile-side">
+                <div class="bg-white rounded-08 shadow p-20">
+                  <h4 class="border-bottom pb-10">General Information</h4>
+                  <div class="mt-20 d-flex flex-column gap-10">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <h5>Gender</h5>
+                      <p class="fs-14">Male</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <h5>Birth of Date</h5>
+                      <p class="fs-14">10 Jul 1998</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <h5>Nationality</h5>
+                      <p class="fs-14">Syrian</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <h5>Maretal Status</h5>
+                      <p class="fs-14">Single</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-20 bg-white rounded-08 shadow p-20">
+                  <h4 class="border-bottom pb-10">Personal Skills</h4>
+                  <div class="mt-20 d-flex flex-wrap gap-10">
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Problem Solving</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Time Managment</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Commitment</span
+                    >
+                  </div>
+                  <h4 class="mt-20 border-bottom pb-10">Technical Skills</h4>
+                  <div class="mt-20 d-flex flex-wrap gap-10">
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >HTML</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >CSS</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Bootstrap</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Saas</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >jQuery</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >JSON</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >AJAX</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >React</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Next.js</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Firebase</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >MySQL</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >WordPress</span
+                    >
+                    <span
+                      class="fs-14 bg-gray bg-blue-hover transition-3 rounded-pill px-15 py-05 cursor-pointer"
+                      >Git</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="profile-main">
+                <div class="bg-white rounded-08 shadow p-20">
+                  <div
+                    class="d-flex gap-10 align-items-center border-bottom pb-20"
+                  >
+                    <div class="image">
+                      <img
+                        src="./images/avatar.jpg"
+                        alt="avatar"
+                        width="40"
+                        class="rounded"
+                      />
+                    </div>
+                    <input
+                      class="bg-light bg-gray-hover transition-3 border-0 rounded-pill px-10"
+                      type="text"
+                      placeholder="Start New Post.."
+                    />
+                  </div>
+                  <div class="mt-20">
+                    <button
+                      class="bg-gray bg-blue-hover transition-3 fw-600 rounded-05 w-100 px-15"
+                    >
+                      Add New Post
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-20 bg-white rounded-08 shadow p-20">
+                  <div class="d-flex gap-10 justify-content-between">
+                    <div class="d-flex gap-10 align-items-center">
+                      <div class="image">
+                        <img
+                          src="./images/profile.jpg"
+                          alt="profile"
+                          width="40"
+                          class="rounded"
+                        />
+                      </div>
+                      <div>
+                        <h4>Ali Alhussein</h4>
+                        <div
+                          class="fs-12 d-flex align-items-center gap-05 text-gray"
+                        >
+                          <i class="fa-solid fa-clock"></i>
+                          <span>3 hours ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="button"
+                      class="bg-light-hover w-h-40 transition-3 rounded d-flex align-items-center justify-content-center text-gray"
+                    >
+                      <i class="fa-solid fa-ellipsis fs-20"></i>
+                    </div>
+                  </div>
+                  <div class="py-10">
+                    <p class="fs-14">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nostrum delectus harum nulla porro deserunt laboriosam
+                      architecto, voluptatem voluptatibus, dolor laudantium
+                      repudiandae natus consequatur fuga? Provident earum
+                      reiciendis facere expedita necessitatibus optio, soluta,
+                      culpa excepturi totam modi, autem odit suscipit ea dolorem
+                      perspiciatis delectus. Nulla facilis itaque asperiores
+                      aperiam labore? Odit.
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between border-top pt-15">
+                    <div
+                      class="transition-3 bg-light-hover rounded-05 px-10 py-05 cursor-pointer"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                      <span class="fs-14">1.2K</span>
+                    </div>
+                    <div
+                      class="transition-3 bg-light-hover rounded-05 px-10 py-05"
+                      role="button"
+                    >
+                      <i class="fa-regular fa-comments"></i>
+                      <span class="fs-14">332</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-20 bg-white rounded-08 shadow p-20">
+                  <div class="d-flex gap-10 justify-content-between">
+                    <div class="d-flex gap-10 align-items-center">
+                      <div class="image">
+                        <img
+                          src="./images/profile.jpg"
+                          alt="profile"
+                          width="40"
+                          class="rounded"
+                        />
+                      </div>
+                      <div>
+                        <h4>Ali Alhussein</h4>
+                        <div
+                          class="fs-12 d-flex align-items-center gap-05 text-gray"
+                        >
+                          <i class="fa-solid fa-clock"></i>
+                          <span>12 Jun 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="button"
+                      class="bg-light-hover w-h-40 transition-3 rounded d-flex align-items-center justify-content-center text-gray"
+                    >
+                      <i class="fa-solid fa-ellipsis fs-20"></i>
+                    </div>
+                  </div>
+                  <div class="py-10">
+                    <p class="fs-14">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nostrum delectus harum nulla porro deserunt laboriosam
+                      architecto, voluptatem voluptatibus, dolor laudantium
+                      repudiandae natus consequatur fuga? Provident earum
+                      reiciendis facere expedita necessitatibus optio, soluta,
+                      culpa excepturi totam modi
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between border-top pt-15">
+                    <div
+                      class="transition-3 bg-light-hover rounded-05 px-10 py-05 cursor-pointer"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                      <span class="fs-14">993</span>
+                    </div>
+                    <div
+                      class="transition-3 bg-light-hover rounded-05 px-10 py-05"
+                      role="button"
+                    >
+                      <i class="fa-regular fa-comments"></i>
+                      <span class="fs-14">56</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-20 bg-white rounded-08 shadow p-20">
+                  <div class="d-flex gap-10 justify-content-between">
+                    <div class="d-flex gap-10 align-items-center">
+                      <div class="image">
+                        <img
+                          src="./images/profile.jpg"
+                          alt="profile"
+                          width="40"
+                          class="rounded"
+                        />
+                      </div>
+                      <div>
+                        <h4>Ali Alhussein</h4>
+                        <div
+                          class="fs-12 d-flex align-items-center gap-05 text-gray"
+                        >
+                          <i class="fa-solid fa-clock"></i>
+                          <span>4 Apr 2022</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="button"
+                      class="bg-light-hover w-h-40 transition-3 rounded d-flex align-items-center justify-content-center text-gray"
+                    >
+                      <i class="fa-solid fa-ellipsis fs-20"></i>
+                    </div>
+                  </div>
+                  <div class="py-10">
+                    <p class="fs-14">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptas, similique. Iste, ex quidem nobis sed nulla atque
+                      numquam deleniti maxime hic quod fuga nihil quos sequi
+                      dolore? Commodi sapiente vero autem optio praesentium
+                      similique velit debitis sint quidem! Veritatis iusto quae
+                      libero est accusantium quibusdam tenetur sequi, expedita
+                      vero, tempora at totam dolor possimus. Officiis quam
+                      expedita fugiat, quos, architecto quia animi facilis optio
+                      atque voluptas odit dolorum nobis! Reiciendis.
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between border-top pt-15">
+                    <div
+                      class="transition-3 bg-light-hover rounded-05 px-10 py-05 cursor-pointer"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                      <span class="fs-14">1.5K</span>
+                    </div>
+                    <div
+                      class="transition-3 bg-light-hover rounded-05 px-10 py-05"
+                      role="button"
+                    >
+                      <i class="fa-regular fa-comments"></i>
+                      <span class="fs-14">874</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Files</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-content d-flex">
+      <aside class="bg-white border-end shadow-sm">
+        <div class="brand d-flex justify-content-center py-15 border-bottom">
+          <a href="./"><h1>3li7u</h1></a>
+        </div>
+        <div class="menu py-20">
+          <ul>
+            <li>
+              <a
+                href="./"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gauge fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-10"
+              >
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  width="24"
+                  class="rounded"
+                />
+                <span class="fs-14 fw-600">Ali Alhussein</span>
+              </a>
+            </li>
+            <h5 class="border-top pt-10 mb-10">Menu</h5>
+            <li>
+              <a
+                href="./projects.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-list-check fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./courses.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./files.html"
+                class="active d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-file-archive fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./settings.html"
+                class="d-flex justify-content-center gap-10 rounded-08 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main courses-page w-100 overflow-hidden">
+        <header
+          class="d-flex align-items-center justify-content-between px-10 bg-white border-bottom shadow-sm"
+        >
+          <div class="w-50 px-05">
+            <div
+              class="d-flex align-items-center bg-light bg-gray-hover transition-3 rounded-pill ps-10"
+            >
+              <i class="fa-solid fa-search fs-14 text-gray"></i>
+              <input
+                class="w-100 px-10 border-0 bg-none"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="w-50 px-05">
+            <div class="d-flex align-items-center justify-content-end gap-10">
+              <i
+                class="fa-solid fa-bell bg-gray p-10 rounded notification-bell has-notf pos-relative d-flex align-items-center justify-content-center"
+              ></i>
+              <div class="header-menu-icon pos-relative" role="button">
+                <i
+                  class="fa-solid fa-chevron-down pos-absolute bottom-05 p-01 border border-white rounded bg-gray right-0 fs-10"
+                ></i>
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  height="40px"
+                  class="rounded"
+                />
+                <div
+                  class="header-menu bg-white rounded-08 p-10 pos-absolute right-0 top-hide mt-05 shadow-md opacity-0 transition-2"
+                >
+                  <a
+                    href="./profile.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-15"
+                  >
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      class="rounded"
+                    />
+                    <span class="fs-14 fw-600">Profile</span>
+                  </a>
+                  <a
+                    href="./settings.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Settings</span>
+                  </a>
+                  <a
+                    class="d-flex gap-10 rounded-08 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-sign-out fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Log Out</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="mx-15">
+          <section class="py-20">
+            <h1>Files</h1>
+          </section>
+          <section class="d-grid courses-content gap-20 pb-20">
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-pdf fa-4x text-cherry"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.pdf</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">20/7/2019</p>
+                <p class="fs-12">2.35MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-word fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.docs</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">12/3/2018</p>
+                <p class="fs-12">12.40KB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-excel fa-4x text-lime"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.xlsx</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">26/5/2020</p>
+                <p class="fs-12">122.70KB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-video fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.mp4</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">9/8/2022</p>
+                <p class="fs-12">520.00MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-powerpoint fa-4x text-tomato"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.pptx</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">1/1/2014</p>
+                <p class="fs-12">2.96MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-audio fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.mp3</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">11/4/2022</p>
+                <p class="fs-12">10.35MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-zipper fa-4x text-lemon"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.rar</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">10/12/2022</p>
+                <p class="fs-12">20.05GB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-pdf fa-4x text-cherry"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.pdf</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">20/7/2019</p>
+                <p class="fs-12">2.35MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-word fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.docs</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">12/3/2018</p>
+                <p class="fs-12">12.40KB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-excel fa-4x text-lime"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.xlsx</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">26/5/2020</p>
+                <p class="fs-12">122.70KB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-video fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.mp4</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">9/8/2022</p>
+                <p class="fs-12">520.00MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-powerpoint fa-4x text-tomato"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.pptx</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">1/1/2014</p>
+                <p class="fs-12">2.96MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-audio fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.mp3</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">11/4/2022</p>
+                <p class="fs-12">10.35MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-zipper fa-4x text-lemon"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.rar</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">10/12/2022</p>
+                <p class="fs-12">20.05GB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-pdf fa-4x text-cherry"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.pdf</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">20/7/2019</p>
+                <p class="fs-12">2.35MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-word fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.docs</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">12/3/2018</p>
+                <p class="fs-12">12.40KB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-excel fa-4x text-lime"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.xlsx</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">26/5/2020</p>
+                <p class="fs-12">122.70KB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-video fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.mp4</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">9/8/2022</p>
+                <p class="fs-12">520.00MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-powerpoint fa-4x text-tomato"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.pptx</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">1/1/2014</p>
+                <p class="fs-12">2.96MB</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-08 shadow px-15 pt-25 pb-10 pos-relative"
+            >
+              <i
+                role="button"
+                class="fa-solid fa-cloud-download text-lime pos-absolute top-10 left-10"
+              ></i>
+              <div class="pb-15 border-bottom text-center">
+                <i class="fa-solid fa-file-audio fa-4x text-blue"></i>
+                <p class="mt-10 fs-14 fw-600">file-name.mp3</p>
+              </div>
+              <div
+                class="mt-10 d-flex align-items-center justify-content-between"
+              >
+                <p class="fs-12">11/4/2022</p>
+                <p class="fs-12">10.35MB</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

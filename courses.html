@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-content d-flex">
+      <aside class="bg-white border-end shadow-sm">
+        <div class="brand d-flex justify-content-center py-15 border-bottom">
+          <a href="./"><h1>3li7u</h1></a>
+        </div>
+        <div class="menu py-20">
+          <ul>
+            <li>
+              <a
+                href="./"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gauge fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-10"
+              >
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  width="24"
+                  class="rounded"
+                />
+                <span class="fs-14 fw-600">Ali Alhussein</span>
+              </a>
+            </li>
+            <h5 class="border-top pt-10 mb-10">Menu</h5>
+            <li>
+              <a
+                href="./projects.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-list-check fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./courses.html"
+                class="active d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./files.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-file-archive fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./settings.html"
+                class="d-flex justify-content-center gap-10 rounded-08 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main courses-page w-100 overflow-hidden">
+        <header
+          class="d-flex align-items-center justify-content-between px-10 bg-white border-bottom shadow-sm"
+        >
+          <div class="w-50 px-05">
+            <div
+              class="d-flex align-items-center bg-light bg-gray-hover transition-3 rounded-pill ps-10"
+            >
+              <i class="fa-solid fa-search fs-14 text-gray"></i>
+              <input
+                class="w-100 px-10 border-0 bg-none"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="w-50 px-05">
+            <div class="d-flex align-items-center justify-content-end gap-10">
+              <i
+                class="fa-solid fa-bell bg-gray p-10 rounded notification-bell has-notf pos-relative d-flex align-items-center justify-content-center"
+              ></i>
+              <div class="header-menu-icon pos-relative" role="button">
+                <i
+                  class="fa-solid fa-chevron-down pos-absolute bottom-05 p-01 border border-white rounded bg-gray right-0 fs-10"
+                ></i>
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  height="40px"
+                  class="rounded"
+                />
+                <div
+                  class="header-menu bg-white rounded-08 p-10 pos-absolute right-0 top-hide mt-05 shadow-md opacity-0 transition-2"
+                >
+                  <a
+                    href="./profile.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-15"
+                  >
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      class="rounded"
+                    />
+                    <span class="fs-14 fw-600">Profile</span>
+                  </a>
+                  <a
+                    href="./settings.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Settings</span>
+                  </a>
+                  <a
+                    class="d-flex gap-10 rounded-08 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-sign-out fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Log Out</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="mx-15">
+          <section class="py-20">
+            <h1>Courses</h1>
+          </section>
+          <section class="d-grid courses-content gap-20 pb-20">
+            <div class="course bg-white rounded-08 shadow overflow-hidden">
+              <div class="image pos-relative overflow-hidden">
+                <img
+                  src="./images/courses/course-01.jpg"
+                  alt="course thumbnail"
+                  class="fit-image image-hover transition-3"
+                />
+                <span
+                  class="category bg-cherry-alt text-cherry rounded-pill px-10 py-05 fs-12 pos-absolute"
+                  >Category</span
+                >
+              </div>
+              <div class="px-15 py-20 border-bottom">
+                <h4>Course Title</h4>
+                <p class="fs-14">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="p-15 d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="fs-12">1,243</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-solid fa-dollar"></i>
+                  <p class="fs-12">99.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="course bg-white rounded-08 shadow overflow-hidden">
+              <div class="image pos-relative overflow-hidden">
+                <img
+                  src="./images/courses/course-02.jpg"
+                  alt="course thumbnail"
+                  class="fit-image image-hover transition-3"
+                />
+                <span
+                  class="category bg-blue-alt text-blue rounded-pill px-10 py-05 fs-12 pos-absolute"
+                  >Category</span
+                >
+              </div>
+              <div class="px-15 py-20 border-bottom">
+                <h4>Course Title</h4>
+                <p class="fs-14">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="p-15 d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="fs-12">973</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-solid fa-dollar"></i>
+                  <p class="fs-12">107</p>
+                </div>
+              </div>
+            </div>
+            <div class="course bg-white rounded-08 shadow overflow-hidden">
+              <div class="image pos-relative overflow-hidden">
+                <img
+                  src="./images/courses/course-03.jpg"
+                  alt="course thumbnail"
+                  class="fit-image image-hover transition-3"
+                />
+                <span
+                  class="category bg-lime-alt text-lime rounded-pill px-10 py-05 fs-12 pos-absolute"
+                  >Category</span
+                >
+              </div>
+              <div class="px-15 py-20 border-bottom">
+                <h4>Course Title</h4>
+                <p class="fs-14">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="p-15 d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="fs-12">176,243</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-solid fa-dollar"></i>
+                  <p class="fs-12 text-lime">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="course bg-white rounded-08 shadow overflow-hidden">
+              <div class="image pos-relative overflow-hidden">
+                <img
+                  src="./images/courses/course-02.jpg"
+                  alt="course thumbnail"
+                  class="fit-image image-hover transition-3"
+                />
+                <span
+                  class="category bg-blue-alt text-blue rounded-pill px-10 py-05 fs-12 pos-absolute"
+                  >Category</span
+                >
+              </div>
+              <div class="px-15 py-20 border-bottom">
+                <h4>Course Title</h4>
+                <p class="fs-14">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="p-15 d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="fs-12">973</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-solid fa-dollar"></i>
+                  <p class="fs-12">107</p>
+                </div>
+              </div>
+            </div>
+            <div class="course bg-white rounded-08 shadow overflow-hidden">
+              <div class="image pos-relative overflow-hidden">
+                <img
+                  src="./images/courses/course-04.jpg"
+                  alt="course thumbnail"
+                  class="fit-image image-hover transition-3"
+                />
+                <span
+                  class="category bg-lemon-alt text-lemon rounded-pill px-10 py-05 fs-12 pos-absolute"
+                  >Category</span
+                >
+              </div>
+              <div class="px-15 py-20 border-bottom">
+                <h4>Course Title</h4>
+                <p class="fs-14">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="p-15 d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="fs-12">123</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-solid fa-dollar"></i>
+                  <p class="fs-12">500</p>
+                </div>
+              </div>
+            </div>
+            <div class="course bg-white rounded-08 shadow overflow-hidden">
+              <div class="image pos-relative overflow-hidden">
+                <img
+                  src="./images/courses/course-01.jpg"
+                  alt="course thumbnail"
+                  class="fit-image image-hover transition-3"
+                />
+                <span
+                  class="category bg-blue-alt text-blue rounded-pill px-10 py-05 fs-12 pos-absolute"
+                  >Category</span
+                >
+              </div>
+              <div class="px-15 py-20 border-bottom">
+                <h4>Course Title</h4>
+                <p class="fs-14">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="p-15 d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="fs-12">1,243</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <i class="fa-solid fa-dollar"></i>
+                  <p class="fs-12">99.99</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

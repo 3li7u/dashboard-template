@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Setting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-content d-flex">
+      <aside class="bg-white border-end shadow-sm">
+        <div class="brand d-flex justify-content-center py-15 border-bottom">
+          <a href="./"><h1>3li7u</h1></a>
+        </div>
+        <div class="menu py-20">
+          <ul>
+            <li>
+              <a
+                href="./"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gauge fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-10"
+              >
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  width="24"
+                  class="rounded"
+                />
+                <span class="fs-14 fw-600">Ali Alhussein</span>
+              </a>
+            </li>
+            <h5 class="border-top pt-10 mb-10">Menu</h5>
+            <li>
+              <a
+                href="./projects.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-list-check fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./courses.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./files.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-file-archive fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./settings.html"
+                class="active d-flex justify-content-center gap-10 rounded-08 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main settings w-100 overflow-hidden">
+        <header
+          class="d-flex align-items-center justify-content-between px-10 bg-white border-bottom shadow-sm"
+        >
+          <div class="w-50 px-05">
+            <div
+              class="d-flex align-items-center bg-light bg-gray-hover transition-3 rounded-pill ps-10"
+            >
+              <i class="fa-solid fa-search fs-14 text-gray"></i>
+              <input
+                class="w-100 px-10 border-0 bg-none"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="w-50 px-05">
+            <div class="d-flex align-items-center justify-content-end gap-10">
+              <i
+                class="fa-solid fa-bell bg-gray p-10 rounded notification-bell has-notf pos-relative d-flex align-items-center justify-content-center"
+              ></i>
+              <div class="header-menu-icon pos-relative" role="button">
+                <i
+                  class="fa-solid fa-chevron-down pos-absolute bottom-05 p-01 border border-white rounded bg-gray right-0 fs-10"
+                ></i>
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  height="40px"
+                  class="rounded"
+                />
+                <div
+                  class="header-menu bg-white rounded-08 p-10 pos-absolute right-0 top-hide mt-05 shadow-md opacity-0 transition-2"
+                >
+                  <a
+                    href="./profile.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-15"
+                  >
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      class="rounded"
+                    />
+                    <span class="fs-14 fw-600">Profile</span>
+                  </a>
+                  <a
+                    href="./settings.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Settings</span>
+                  </a>
+                  <a
+                    class="d-flex gap-10 rounded-08 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-sign-out fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Log Out</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="px-15 pb-20">
+          <section class="py-20">
+            <h1>Settings</h1>
+          </section>
+          <section class="bg-white p-20 rounded-08 shadow">
+            <div class="border-bottom pb-20 d-flex align-items-center gap-15">
+              <i class="fa-solid fa-screwdriver-wrench fs-24"></i>
+              <h4>Website Configration</h4>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Maintainance Mode</h4>
+                <p class="fs-14">Enable / Disable maintainance mode</p>
+              </div>
+              <div class="options">
+                <label for="check-maintainance">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-maintainance"
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex flex-wrap gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Message</h4>
+                <p class="fs-14">
+                  This message will appear to site visitors during the
+                  maintenance mode period
+                </p>
+              </div>
+              <div class="options">
+                <textarea
+                  placeholder="Type a message.."
+                  class="close-message border rounded-08 p-10 resize-none"
+                ></textarea>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Backup Frequency</h4>
+                <p class="fs-14">Set the backup frequency</p>
+              </div>
+              <div class="options">
+                <select class="border rounded-08 px-20">
+                  <option value="D">Daily</option>
+                  <option value="W" selected>Weekly</option>
+                  <option value="M">Monthly</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white p-20 rounded-08 shadow my-20">
+            <div class="border-bottom pb-20 d-flex align-items-center gap-15">
+              <i class="fa-solid fa-lock fs-24"></i>
+              <h4>Security & Privacy</h4>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Tow-Factor Authentication</h4>
+                <p class="fs-14">Enable / Disable Tow-Factor Authentication</p>
+              </div>
+              <div class="options">
+                <label for="check-tow-factor">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-tow-factor"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Password</h4>
+                <p class="fs-14">Last Update: 13 Jun 2021</p>
+              </div>
+              <div class="options">
+                <button
+                  class="bg-gray rounded-pill px-15 bg-blue-hover transition-3 fw-600"
+                >
+                  Change
+                </button>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Loged-in Devices</h4>
+                <p class="fs-14">Current: Chrome Windows 10, Aleppo - Syria</p>
+              </div>
+              <div class="options">
+                <button
+                  class="bg-gray rounded-pill px-15 bg-blue-hover transition-3 fw-600"
+                >
+                  Manage
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white p-20 rounded-08 shadow">
+            <div class="border-bottom pb-20 d-flex align-items-center gap-15">
+              <i class="fa-solid fa-sliders fs-24"></i>
+              <h4>Widgets Settings</h4>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Quick Draft Widget</h4>
+                <p class="fs-14">Enable / Disable Quick Draft Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-draft">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-draft"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Yearly golas Widget</h4>
+                <p class="fs-14">Enable / Disable Yearly golas Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-goals">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-goals"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Ticket Statistics Widget</h4>
+                <p class="fs-14">Enable / Disable Ticket Statistics Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-ticket">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-ticket"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Latest News Widget</h4>
+                <p class="fs-14">Enable / Disable Latest News Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-news">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-news"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Tasks Widget</h4>
+                <p class="fs-14">Enable / Disable Tasks Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-tasks">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-tasks"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Search Terms Widget</h4>
+                <p class="fs-14">Enable / Disable Search Terms Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-search">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-search"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Uploaded Files Widget</h4>
+                <p class="fs-14">Enable / Disable Uploaded Files Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-files">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-files"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Current Project Widget</h4>
+                <p class="fs-14">Enable / Disable Current Project Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-project">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-project"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Reminders Widget</h4>
+                <p class="fs-14">Enable / Disable Reminders Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-reminders">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-reminders"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Last Post Widget</h4>
+                <p class="fs-14">Enable / Disable Last Post Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-post">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-post"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="mt-20 d-flex gap-20 justify-content-between align-items-center"
+            >
+              <div class="title">
+                <h4>Social Media Widget</h4>
+                <p class="fs-14">Enable / Disable Social Media Widget</p>
+              </div>
+              <div class="options">
+                <label for="check-social">
+                  <input
+                    class="d-none"
+                    type="checkbox"
+                    id="check-social"
+                    checked
+                  />
+                  <div class="bg-white border p-05 rounded-pill w-content">
+                    <div
+                      class="custom-checkbox rounded-pill cursor-pointer pos-relative bg-gray"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script>
+      window.onload = () => {
+        const messageEL = document.querySelector("textarea.close-message");
+        const checkEl = document.querySelector("input#check-maintainance");
+        messageEL.disabled = !checkEl.checked;
+        checkEl.addEventListener(
+          "change",
+          (event) => (messageEL.disabled = !event.target.checked)
+        );
+      };
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-content d-flex">
+      <aside class="bg-white border-end shadow-sm">
+        <div class="brand d-flex justify-content-center py-15 border-bottom">
+          <a href="./"><h1>3li7u</h1></a>
+        </div>
+        <div class="menu py-20">
+          <ul>
+            <li>
+              <a
+                href="./"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gauge fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-10"
+              >
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  width="24"
+                  class="rounded"
+                />
+                <span class="fs-14 fw-600">Ali Alhussein</span>
+              </a>
+            </li>
+            <h5 class="border-top pt-10 mb-10">Menu</h5>
+            <li>
+              <a
+                href="./projects.html"
+                class="active d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-list-check fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./courses.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./files.html"
+                class="d-flex justify-content-center gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-file-archive fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./settings.html"
+                class="d-flex justify-content-center gap-10 rounded-08 align-items-center text-black py-08 px-10"
+              >
+                <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                <span class="fs-14 fw-600">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main projects-page w-100 overflow-hidden">
+        <header
+          class="d-flex align-items-center justify-content-between px-10 bg-white border-bottom shadow-sm"
+        >
+          <div class="w-50 px-05">
+            <div
+              class="d-flex align-items-center bg-light bg-gray-hover transition-3 rounded-pill ps-10"
+            >
+              <i class="fa-solid fa-search fs-14 text-gray"></i>
+              <input
+                class="w-100 px-10 border-0 bg-none"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="w-50 px-05">
+            <div class="d-flex align-items-center justify-content-end gap-10">
+              <i
+                class="fa-solid fa-bell bg-gray p-10 rounded notification-bell has-notf pos-relative d-flex align-items-center justify-content-center"
+              ></i>
+              <div class="header-menu-icon pos-relative" role="button">
+                <i
+                  class="fa-solid fa-chevron-down pos-absolute bottom-05 p-01 border border-white rounded bg-gray right-0 fs-10"
+                ></i>
+                <img
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                  height="40px"
+                  class="rounded"
+                />
+                <div
+                  class="header-menu bg-white rounded-08 p-10 pos-absolute right-0 top-hide mt-05 shadow-md opacity-0 transition-2"
+                >
+                  <a
+                    href="./profile.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-06 px-15"
+                  >
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      class="rounded"
+                    />
+                    <span class="fs-14 fw-600">Profile</span>
+                  </a>
+                  <a
+                    href="./settings.html"
+                    class="d-flex gap-10 rounded-08 mb-10 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-gear fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Settings</span>
+                  </a>
+                  <a
+                    class="d-flex gap-10 rounded-08 align-items-center text-black py-08 px-15"
+                  >
+                    <i class="fa-solid fa-sign-out fa-fw fs-20"></i>
+                    <span class="fs-14 fw-600">Log Out</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="mx-15">
+          <section class="py-20">
+            <h1>Projects</h1>
+          </section>
+          <section class="d-grid content gap-20 pb-20">
+            <div class="bg-white rounded-08 shadow px-15 py-20">
+              <div class="d-flex justify-content-between border-bottom pb-10">
+                <div>
+                  <h4>Project Name</h4>
+                  <p class="fs-14">Lorem, ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div>
+                  <span
+                    title="Completed"
+                    class="bg-blue-alt text-blue w-h-40 rounded-05 d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between border-bottom pb-10"
+              >
+                <div>
+                  <p class="fw-600 fs-14">Project Manager</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">Team Members</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-02.png" alt="avatar" />
+                    <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-04.png" alt="avatar" />
+                    <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between"
+              >
+                <div class="w-50">
+                  <div
+                    class="bg-blue-alt rounded-pill overflow-hidden w-100"
+                    style="height: 6px"
+                  >
+                    <div class="bg-blue h-100" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">10 Jun 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-08 shadow px-15 py-20">
+              <div class="d-flex justify-content-between border-bottom pb-10">
+                <div>
+                  <h4>Project Name</h4>
+                  <p class="fs-14">Lorem, ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div>
+                  <span
+                    title="Completed"
+                    class="bg-blue-alt text-blue w-h-40 rounded-05 d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between border-bottom pb-10"
+              >
+                <div>
+                  <p class="fw-600 fs-14">Project Manager</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-02.png" alt="avatar" />
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">Team Members</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-04.png" alt="avatar" />
+                    <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between"
+              >
+                <div class="w-50">
+                  <div
+                    class="bg-blue-alt rounded-pill overflow-hidden w-100"
+                    style="height: 6px"
+                  >
+                    <div class="bg-blue h-100" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">1 Mar 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-08 shadow px-15 py-20">
+              <div class="d-flex justify-content-between border-bottom pb-10">
+                <div>
+                  <h4>Project Name</h4>
+                  <p class="fs-14">Lorem, ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                  <span
+                    title="In Progress"
+                    class="bg-lime-alt text-lime w-h-40 rounded-05 d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-spinner"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between border-bottom pb-10"
+              >
+                <div>
+                  <p class="fw-600 fs-14">Project Manager</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-02.png" alt="avatar" />
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">Team Members</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-04.png" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between"
+              >
+                <div class="w-50">
+                  <div
+                    class="bg-lime-alt rounded-pill overflow-hidden w-100"
+                    style="height: 6px"
+                  >
+                    <div class="bg-lime h-100" style="width: 45%"></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">4 Aug 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-08 shadow px-15 py-20">
+              <div class="d-flex justify-content-between border-bottom pb-10">
+                <div>
+                  <h4>Project Name</h4>
+                  <p class="fs-14">Lorem, ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div>
+                  <span
+                    title="Completed"
+                    class="bg-blue-alt text-blue w-h-40 rounded-05 d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between border-bottom pb-10"
+              >
+                <div>
+                  <p class="fw-600 fs-14">Project Manager</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-04.png" alt="avatar" />
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">Team Members</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-02.png" alt="avatar" />
+                    <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between"
+              >
+                <div class="w-50">
+                  <div
+                    class="bg-blue-alt rounded-pill overflow-hidden w-100"
+                    style="height: 6px"
+                  >
+                    <div class="bg-blue h-100" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">6 Apr 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-08 shadow px-15 py-20">
+              <div class="d-flex justify-content-between border-bottom pb-10">
+                <div>
+                  <h4>Project Name</h4>
+                  <p class="fs-14">Lorem, ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                  <span
+                    title="Pending"
+                    class="bg-lemon-alt text-lemon w-h-40 rounded-05 d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between border-bottom pb-10"
+              >
+                <div>
+                  <p class="fw-600 fs-14">Project Manager</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">Team Members</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-04.png" alt="avatar" />
+                    <img src="./images/Team/avatar-02.png" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between"
+              >
+                <div class="w-50">
+                  <div
+                    class="bg-lemon-alt rounded-pill overflow-hidden w-100"
+                    style="height: 6px"
+                  >
+                    <div class="bg-lemon h-100" style="width: 25%"></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">13 Feb 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-08 shadow px-15 py-20">
+              <div class="d-flex justify-content-between border-bottom pb-10">
+                <div>
+                  <h4>Project Name</h4>
+                  <p class="fs-14">Lorem, ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                  <span
+                    title="In Progress"
+                    class="bg-lime-alt text-lime w-h-40 rounded-05 d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-spinner"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between border-bottom pb-10"
+              >
+                <div>
+                  <p class="fw-600 fs-14">Project Manager</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-01.jpg" alt="avatar" />
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">Team Members</p>
+                  <div class="team-members">
+                    <img src="./images/Team/avatar-02.png" alt="avatar" />
+                    <img src="./images/Team/avatar-03.jpg" alt="avatar" />
+                    <img src="./images/Team/avatar-04.png" alt="avatar" />
+                    <img src="./images/Team/avatar-05.jpg" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-20 d-flex align-items-center justify-content-between"
+              >
+                <div class="w-50">
+                  <div
+                    class="bg-lime-alt rounded-pill overflow-hidden w-100"
+                    style="height: 6px"
+                  >
+                    <div class="bg-lime h-100" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-14">2 Dec 2022</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
